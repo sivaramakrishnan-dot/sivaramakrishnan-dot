@@ -25,7 +25,7 @@ pipeline {
     
         stage('BuildImage and push') {
             environment {
-                DOCKER_IMAGE = "sivaramakrishnan-dot/java-app:${BUILD_NUMBER}"
+                DOCKER_IMAGE = "sivaramakrishnan-dot/sivaramakrishnan-dot:${BUILD_NUMBER}"
                 REGISTRY_CREDENTIALS = credentials('docker-cred')
             }
             steps {
